@@ -20,13 +20,13 @@ export function About() {
 						whileInView={{ opacity: 1, x: 0 }}
 						viewport={{ once: true, margin: '-100px' }}
 						transition={{ duration: 0.8, ease: 'easeOut' }}
-						className="relative aspect-[4/3] rounded-2xl overflow-hidden"
+						className="relative aspect-[4/3] rounded-2xl overflow-hidden bg-neutral-900 flex items-center justify-center"
 					>
 						<Image
 							src="/profe.png"
 							alt="Profesor de tenis enseñando en JuegoTenis"
 							fill
-							className="object-cover"
+							className="object-contain object-center"
 							sizes="(max-width: 1024px) 100vw, 50vw"
 						/>
 						<div className="absolute inset-0 bg-gradient-to-br from-brand-500/10 to-neutral-950/30" />
