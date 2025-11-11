@@ -21,7 +21,7 @@ export function Locations() {
 					initial={{ opacity: 0, y: 20 }}
 					whileInView={{ opacity: 1, y: 0 }}
 					viewport={{ once: true, margin: '-100px' }}
-					transition={{ duration: 0.6 }}
+					transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
 					className="mb-6 sm:mb-8 text-center"
 				>
 					<h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-neutral-950 mb-2 tracking-tight">
@@ -35,17 +35,46 @@ export function Locations() {
 					</p>
 				</motion.div>
 
-				<div className="grid grid-cols-1 gap-3 sm:gap-4 lg:gap-5 max-w-6xl mx-auto">
+				<div className="grid grid-cols-1 gap-3 sm:gap-4 lg:gap-5 max-w-6xl mx-auto relative">
 					{[
-						siteConfig.locations.caballito,
 						siteConfig.locations.nunez,
-					].map((location, index) => (
+						siteConfig.locations.caballito,
+					].map((location, index) => {
+						// Primera card (Núñez) - aparece normalmente
+						// Segunda card (Doblas) - sale de dentro de la primera
+						const isSecond = index === 1
+						
+						return (
 						<motion.div
 							key={location.name}
-							initial={{ opacity: 0, y: 30 }}
-							whileInView={{ opacity: 1, y: 0 }}
+							initial={isSecond ? {
+								opacity: 0,
+								scale: 0.6,
+								y: -60,
+								x: 0,
+							} : {
+								opacity: 0,
+								y: 30,
+							}}
+							whileInView={isSecond ? {
+								opacity: 1,
+								scale: 1,
+								y: 0,
+								x: 0,
+							} : {
+								opacity: 1,
+								y: 0,
+							}}
 							viewport={{ once: true, margin: '-50px' }}
-							transition={{ duration: 0.6, delay: index * 0.1 }}
+							transition={isSecond ? {
+								duration: 1.6,
+								delay: 1.0,
+								ease: [0.16, 1, 0.3, 1],
+							} : {
+								duration: 1.2,
+								delay: 0.2,
+								ease: [0.16, 1, 0.3, 1],
+							}}
 							className="group"
 						>
 							<a
@@ -55,7 +84,7 @@ export function Locations() {
 								className="block relative overflow-hidden rounded-2xl transition-all duration-300 hover:scale-[1.01] hover:shadow-2xl"
 							>
 								{/* Image */}
-								<div className="aspect-[21/9] sm:aspect-[24/9] lg:aspect-[28/9] relative overflow-hidden bg-neutral-900">
+								<div className="aspect-[24/7] sm:aspect-[28/7] lg:aspect-[32/7] relative overflow-hidden bg-neutral-900">
 									<Image
 										src={location.image}
 										alt={`${location.name} - ${location.address}`}
@@ -98,7 +127,8 @@ export function Locations() {
 								</div>
 							</a>
 						</motion.div>
-					))}
+						)
+					})}
 				</div>
 			</div>
 		</section>

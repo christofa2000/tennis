@@ -11,47 +11,62 @@ import Image from 'next/image'
 export function Hero() {
 	return (
 		<section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-neutral-950">
-			{/* Background Image with Overlay */}
+			{/* Background with gradient overlay */}
 			<div className="absolute inset-0 z-0">
-				<div className="absolute inset-0 bg-gradient-to-b from-neutral-950/80 via-neutral-950/70 to-neutral-950/90 z-10" />
-				{/* Placeholder for tennis image - replace with actual image */}
-				<div className="w-full h-full bg-gradient-to-br from-neutral-900 via-neutral-950 to-neutral-900" />
+				<div className="absolute inset-0 bg-gradient-to-br from-neutral-950 via-neutral-900 to-neutral-950" />
+				{/* Subtle brand gradient accent */}
+				<div className="absolute inset-0 bg-gradient-to-t from-brand-500/5 via-transparent to-transparent" />
+				{/* Dark overlay for text readability */}
+				<div className="absolute inset-0 bg-gradient-to-b from-neutral-950/95 via-neutral-950/85 to-neutral-950/90" />
 			</div>
 
 			{/* Content */}
 			<div className="relative z-20 container mx-auto px-4 sm:px-6 lg:px-8">
 				<div className="max-w-4xl mx-auto text-center">
 					<motion.div
-						initial={{ opacity: 0, y: 30 }}
+						initial={{ opacity: 0, y: 40 }}
 						animate={{ opacity: 1, y: 0 }}
-						transition={{ duration: 0.8, ease: 'easeOut' }}
+						transition={{ duration: 1.4, ease: [0.16, 1, 0.3, 1] }}
 					>
-						<h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
+						<motion.h1
+							initial={{ opacity: 0, y: 20 }}
+							animate={{ opacity: 1, y: 0 }}
+							transition={{ duration: 1.2, delay: 0.2 }}
+							className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-white mb-6 leading-[1.1] tracking-tight"
+						>
 							Somos{' '}
-							<span className="text-brand-500">JuegoTenis</span>{' '}
-							🎾
-						</h1>
-						<p className="text-lg sm:text-xl md:text-2xl text-neutral-200 mb-8 max-w-2xl mx-auto leading-relaxed">
-							Clases de tenis dinámicas y divertidas en Buenos
-							Aires.
-						</p>
-						<p className="text-base sm:text-lg text-neutral-300 mb-12 max-w-xl mx-auto">
-							Entrena en Caballito o Núñez con profesores
-							profesionales, en grupos reducidos y con una
-							metodología que combina técnica, táctica y
-							diversión.
-						</p>
+							<span className="bg-gradient-to-r from-brand-500 to-accent-500 bg-clip-text text-transparent">
+								JuegoTenis
+							</span>{' '}
+							<span className="inline-block">🎾</span>
+						</motion.h1>
+						<motion.p
+							initial={{ opacity: 0, y: 20 }}
+							animate={{ opacity: 1, y: 0 }}
+							transition={{ duration: 1.2, delay: 0.4 }}
+							className="text-xl sm:text-2xl md:text-3xl text-neutral-100 mb-6 max-w-2xl mx-auto leading-relaxed font-medium"
+						>
+							Clases de tenis dinámicas y divertidas en Buenos Aires.
+						</motion.p>
+						<motion.p
+							initial={{ opacity: 0, y: 20 }}
+							animate={{ opacity: 1, y: 0 }}
+							transition={{ duration: 1.2, delay: 0.6 }}
+							className="text-base sm:text-lg md:text-xl text-neutral-300 mb-12 max-w-xl mx-auto leading-relaxed"
+						>
+							Entrena en Caballito o Núñez con profesores profesionales, en grupos reducidos y con una metodología que combina técnica, táctica y diversión.
+						</motion.p>
 					</motion.div>
 
 					<motion.div
-						initial={{ opacity: 0, y: 20 }}
+						initial={{ opacity: 0, y: 30 }}
 						animate={{ opacity: 1, y: 0 }}
-						transition={{ duration: 0.8, delay: 0.2, ease: 'easeOut' }}
+						transition={{ duration: 1.2, delay: 0.8, ease: [0.16, 1, 0.3, 1] }}
 						className="flex flex-col sm:flex-row gap-4 justify-center items-center"
 					>
 						<Button
 							size="lg"
-							className="w-full sm:w-auto min-w-[200px] group"
+							className="w-full sm:w-auto min-w-[220px] group shadow-lg shadow-brand-500/30 hover:shadow-xl hover:shadow-brand-500/40"
 							asChild
 						>
 							<a href={siteConfig.links.whatsapp} target="_blank" rel="noopener noreferrer">
@@ -62,7 +77,7 @@ export function Hero() {
 						<Button
 							variant="outline"
 							size="lg"
-							className="w-full sm:w-auto min-w-[200px] border-white text-white hover:bg-white hover:text-neutral-950"
+							className="w-full sm:w-auto min-w-[220px] border-2 border-white/30 text-white backdrop-blur-sm bg-white/5 hover:bg-white/10 hover:border-white/50 transition-all"
 							asChild
 						>
 							<a href="#quienes-somos">
