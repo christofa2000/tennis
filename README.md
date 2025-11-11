@@ -192,4 +192,4 @@ Proyecto privado para JuegoTenis.
 ---
 
 **Desarrollado con ❤️ usando Next.js 16 y TypeScript**
-"# tennis" 
+"# tennis"
