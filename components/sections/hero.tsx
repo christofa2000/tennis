@@ -52,7 +52,7 @@ export function Hero() {
 							initial={{ opacity: 0, y: 20 }}
 							animate={{ opacity: 1, y: 0 }}
 							transition={{ duration: 1.2, delay: 0.6 }}
-							className="text-base sm:text-lg md:text-xl text-neutral-300 mb-12 max-w-xl mx-auto leading-relaxed"
+							className="text-base sm:text-lg md:text-xl text-neutral-200 mb-12 max-w-xl mx-auto leading-relaxed"
 						>
 							Entrena en Caballito o Núñez con profesores profesionales, en grupos reducidos y con una metodología que combina técnica, táctica y diversión.
 						</motion.p>

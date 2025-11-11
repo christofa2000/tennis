@@ -65,41 +65,43 @@ export function Navbar() {
 					</Link>
 
 					{/* Desktop Navigation */}
-					<div className="hidden md:flex items-center gap-8">
+					<nav className="hidden md:flex items-center gap-6" aria-label="Navegación principal">
 						{navItems.map((item) => (
 							<button
 								key={item.href}
 								onClick={() => handleNavClick(item.href)}
-								className="text-white hover:text-brand-500 transition-colors font-medium"
+								className="text-white hover:text-brand-500 transition-colors font-medium min-h-[44px] px-3 flex items-center focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 focus-visible:ring-offset-2 focus-visible:ring-offset-neutral-950"
 							>
 								{item.label}
 							</button>
 						))}
 						<Button
 							variant="primary"
-							size="sm"
+							size="md"
 							asChild
 						>
 							<a
 								href={siteConfig.links.whatsapp}
 								target="_blank"
 								rel="noopener noreferrer"
+								aria-label="Contactar por WhatsApp"
 							>
 								Contratá acá
 							</a>
 						</Button>
-					</div>
+					</nav>
 
 					{/* Mobile Menu Button */}
 					<button
-						className="md:hidden text-white"
+						className="md:hidden text-white min-h-[44px] min-w-[44px] flex items-center justify-center focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 focus-visible:ring-offset-2 focus-visible:ring-offset-neutral-950 rounded"
 						onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-						aria-label="Toggle menu"
+						aria-label={isMobileMenuOpen ? 'Cerrar menú' : 'Abrir menú'}
+						aria-expanded={isMobileMenuOpen}
 					>
 						{isMobileMenuOpen ? (
-							<X className="h-6 w-6" />
+							<X className="h-6 w-6" aria-hidden="true" />
 						) : (
-							<Menu className="h-6 w-6" />
+							<Menu className="h-6 w-6" aria-hidden="true" />
 						)}
 					</button>
 				</div>
@@ -114,19 +116,19 @@ export function Navbar() {
 						exit={{ opacity: 0, height: 0 }}
 						className="md:hidden bg-neutral-950/98 backdrop-blur-md border-t border-neutral-800"
 					>
-						<div className="container mx-auto px-4 py-6 space-y-4">
+						<nav className="container mx-auto px-4 py-6 space-y-2" aria-label="Menú móvil">
 							{navItems.map((item) => (
 								<button
 									key={item.href}
 									onClick={() => handleNavClick(item.href)}
-									className="block w-full text-left text-white hover:text-brand-500 transition-colors font-medium py-2"
+									className="block w-full text-left text-white hover:text-brand-500 transition-colors font-medium min-h-[44px] px-4 flex items-center focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 focus-visible:ring-offset-2 focus-visible:ring-offset-neutral-950 rounded"
 								>
 									{item.label}
 								</button>
 							))}
 							<Button
 								variant="primary"
-								size="sm"
+								size="md"
 								className="w-full"
 								asChild
 							>
@@ -134,11 +136,12 @@ export function Navbar() {
 									href={siteConfig.links.whatsapp}
 									target="_blank"
 									rel="noopener noreferrer"
+									aria-label="Contactar por WhatsApp"
 								>
 									Contratá acá
 								</a>
 							</Button>
-						</div>
+						</nav>
 					</motion.div>
 				)}
 			</AnimatePresence>

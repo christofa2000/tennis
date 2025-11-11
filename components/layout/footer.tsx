@@ -33,38 +33,40 @@ export function Footer() {
 								className="h-14 w-auto object-contain"
 							/>
 						</Link>
-						<p className="text-neutral-300 text-sm sm:text-base leading-relaxed max-w-xs">
+						<p className="text-neutral-200 text-sm sm:text-base leading-relaxed max-w-xs">
 							Clases de tenis dinámicas y divertidas en Buenos Aires.
 						</p>
 					</div>
 
 					{/* Links */}
-					<div>
-						<h4 className="font-bold text-white mb-6 text-base sm:text-lg">Enlaces</h4>
-						<nav className="space-y-3">
+					<nav aria-label="Enlaces del sitio">
+						<h2 className="font-bold text-white mb-6 text-base sm:text-lg">Enlaces</h2>
+						<ul className="space-y-3">
 							{footerLinks.map((link) => (
-								<Link
-									key={link.href}
-									href={link.href}
-									className="block text-neutral-400 hover:text-brand-500 transition-colors text-sm sm:text-base font-medium"
-								>
-									{link.label}
-								</Link>
+								<li key={link.href}>
+									<Link
+										href={link.href}
+										className="block text-neutral-200 hover:text-brand-500 transition-colors text-sm sm:text-base font-medium min-h-[44px] flex items-center"
+									>
+										{link.label}
+									</Link>
+								</li>
 							))}
-						</nav>
-					</div>
+						</ul>
+					</nav>
 
 					{/* Social & Contact */}
 					<div>
-						<h4 className="font-bold text-white mb-6 text-base sm:text-lg">Seguinos</h4>
+						<h2 className="font-bold text-white mb-6 text-base sm:text-lg">Seguinos</h2>
 						<div className="space-y-4">
 							<a
 								href={siteConfig.links.instagram}
 								target="_blank"
 								rel="noopener noreferrer"
-								className="inline-flex items-center gap-3 text-neutral-300 hover:text-brand-500 transition-all text-sm sm:text-base font-medium group"
+								aria-label="Seguinos en Instagram"
+								className="inline-flex items-center gap-3 text-neutral-200 hover:text-brand-500 transition-all text-sm sm:text-base font-medium group min-h-[44px]"
 							>
-								<Instagram className="h-5 w-5 transition-transform group-hover:scale-110" />
+								<Instagram className="h-5 w-5 transition-transform group-hover:scale-110" aria-hidden="true" />
 								Instagram
 							</a>
 						</div>
