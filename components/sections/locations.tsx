@@ -7,6 +7,7 @@ import { SectionTitle } from '@/components/ui/section-title'
 import { Button } from '@/components/ui/button'
 import { siteConfig } from '@/lib/config/site'
 import { MapPin, ExternalLink } from 'lucide-react'
+import Image from 'next/image'
 
 export function Locations() {
 	return (
@@ -42,11 +43,14 @@ export function Locations() {
 						>
 							<div className="relative overflow-hidden rounded-2xl bg-neutral-50 shadow-lg transition-all duration-300 hover:shadow-2xl hover:scale-[1.02]">
 								{/* Image */}
-								<div className="aspect-[16/10] relative bg-gradient-to-br from-neutral-200 to-neutral-300">
-									{/* Placeholder - replace with actual location image */}
-									<div className="absolute inset-0 flex items-center justify-center text-neutral-400">
-										<span className="text-sm">{location.name}</span>
-									</div>
+								<div className="aspect-[16/10] relative overflow-hidden">
+									<Image
+										src={location.image}
+										alt={`${location.name} - ${location.address}`}
+										fill
+										className="object-cover transition-transform duration-300 group-hover:scale-110"
+										sizes="(max-width: 768px) 100vw, 50vw"
+									/>
 								</div>
 
 								{/* Content */}

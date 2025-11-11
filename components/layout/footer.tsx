@@ -3,6 +3,7 @@
 import Link from 'next/link'
 import { siteConfig } from '@/lib/config/site'
 import { Instagram } from 'lucide-react'
+import Image from 'next/image'
 
 const footerLinks = [
 	{ label: 'Clases', href: '#clases' },
@@ -17,9 +18,18 @@ export function Footer() {
 				<div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
 					{/* Logo & Description */}
 					<div>
-						<h3 className="text-2xl font-bold mb-4">
-							Juego<span className="text-brand-500">Tenis</span>
-						</h3>
+						<Link
+							href="/"
+							className="inline-block mb-4"
+						>
+							<Image
+								src="/logo/fondo-negro.jpeg"
+								alt="JuegoTenis Logo"
+								width={140}
+								height={56}
+								className="h-12 w-auto object-contain"
+							/>
+						</Link>
 						<p className="text-neutral-400 text-sm leading-relaxed">
 							Clases de tenis dinámicas y divertidas en Buenos Aires.
 						</p>

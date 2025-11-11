@@ -22,12 +22,14 @@ export function About() {
 						transition={{ duration: 0.8, ease: 'easeOut' }}
 						className="relative aspect-[4/3] rounded-2xl overflow-hidden"
 					>
-						<div className="absolute inset-0 bg-gradient-to-br from-brand-500/20 to-neutral-800">
-							{/* Placeholder for tennis instructor image */}
-							<div className="absolute inset-0 flex items-center justify-center text-neutral-400">
-								<span className="text-sm">Imagen: Profesor enseñando tenis</span>
-							</div>
-						</div>
+						<Image
+							src="/profe.png"
+							alt="Profesor de tenis enseñando en JuegoTenis"
+							fill
+							className="object-cover"
+							sizes="(max-width: 1024px) 100vw, 50vw"
+						/>
+						<div className="absolute inset-0 bg-gradient-to-br from-brand-500/10 to-neutral-950/30" />
 					</motion.div>
 
 					{/* Content */}

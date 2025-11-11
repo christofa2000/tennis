@@ -13,14 +13,14 @@ const services = [
 		title: 'Clases de tenis para adultos',
 		description:
 			'Clases diseñadas para adultos de todos los niveles. Mejorá tu técnica, desarrollá tu juego y disfrutá del tenis en un ambiente amigable y profesional.',
-		image: '/services/adultos.jpg',
+		image: '/adultos.png',
 		alt: 'Clases de tenis para adultos en JuegoTenis',
 	},
 	{
 		title: 'Clases de niños y adolescentes',
 		description:
 			'Escuela infantil de tenis con metodología lúdica y adaptada a cada edad. Desarrollamos habilidades técnicas, coordinación y valores deportivos desde temprana edad.',
-		image: '/services/ninos.jpg',
+		image: '/niños.png',
 		alt: 'Clases de tenis para niños y adolescentes en JuegoTenis',
 	},
 ]
@@ -59,11 +59,14 @@ export function Services() {
 						>
 							<div className="relative overflow-hidden rounded-2xl bg-neutral-100 shadow-lg transition-all duration-300 hover:shadow-2xl hover:scale-[1.02]">
 								{/* Image */}
-								<div className="aspect-[16/10] relative bg-gradient-to-br from-neutral-200 to-neutral-300">
-									{/* Placeholder - replace with actual image */}
-									<div className="absolute inset-0 flex items-center justify-center text-neutral-400">
-										<span className="text-sm">Imagen: {service.title}</span>
-									</div>
+								<div className="aspect-[16/10] relative overflow-hidden">
+									<Image
+										src={service.image}
+										alt={service.alt}
+										fill
+										className="object-cover transition-transform duration-300 group-hover:scale-110"
+										sizes="(max-width: 768px) 100vw, 50vw"
+									/>
 								</div>
 
 								{/* Content */}

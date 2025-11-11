@@ -8,6 +8,7 @@ import { Button } from '@/components/ui/button'
 import { siteConfig } from '@/lib/config/site'
 import { Menu, X } from 'lucide-react'
 import Link from 'next/link'
+import Image from 'next/image'
 
 const navItems = [
 	{ label: 'Clases', href: '#clases' },
@@ -50,10 +51,17 @@ export function Navbar() {
 					{/* Logo */}
 					<Link
 						href="/"
-						className="text-2xl font-bold text-white hover:text-brand-500 transition-colors"
+						className="flex items-center h-12 md:h-14 hover:opacity-80 transition-opacity"
 						onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
 					>
-						Juego<span className="text-brand-500">Tenis</span>
+						<Image
+							src="/logo/fondo-blanco.jpg"
+							alt="JuegoTenis Logo"
+							width={140}
+							height={56}
+							className="h-full w-auto object-contain"
+							priority
+						/>
 					</Link>
 
 					{/* Desktop Navigation */}

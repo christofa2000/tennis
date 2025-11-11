@@ -15,11 +15,13 @@ export const siteConfig = {
 			name: 'Sede Núñez',
 			address: 'Santiago Calzadilla 1350, CABA',
 			mapsUrl: 'https://maps.google.com/?q=Santiago+Calzadilla+1350,+CABA',
+			image: '/nuñez.webp',
 		},
 		caballito: {
 			name: 'Sede Caballito',
 			address: 'Doblas 1043, CABA',
 			mapsUrl: 'https://maps.google.com/?q=Doblas+1043,+CABA',
+			image: '/doblas.jpg',
 		},
 	},
 } as const
