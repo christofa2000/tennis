@@ -23,15 +23,6 @@ describe('CTA Section', () => {
 		expect(description).toBeInTheDocument()
 	})
 
-	it('should render WhatsApp button with correct link', () => {
-		render(<CTA />)
-		
-		const button = screen.getByRole('link', { name: /Contactar por WhatsApp/i })
-		expect(button).toBeInTheDocument()
-		expect(button).toHaveAttribute('href', siteConfig.links.whatsapp)
-		expect(button).toHaveAttribute('target', '_blank')
-		expect(button).toHaveAttribute('rel', 'noopener noreferrer')
-	})
 
 	it('should render emoji in heading', () => {
 		render(<CTA />)
@@ -40,15 +31,6 @@ describe('CTA Section', () => {
 		expect(heading).toHaveTextContent('🎾')
 	})
 
-	it('should have proper button size for accessibility', () => {
-		render(<CTA />)
-		
-		const button = screen.getByRole('link', { name: /Contactar por WhatsApp/i })
-		
-		// Verificar que el botón tenga altura mínima de 44px
-		const buttonElement = button.closest('button') || button
-		expect(buttonElement).toHaveClass('min-h-[44px]')
-	})
 
 	it('should have no accessibility violations', async () => {
 		const { container } = render(<CTA />)

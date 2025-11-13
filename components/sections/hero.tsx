@@ -54,19 +54,9 @@ export function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.2, delay: 0.4 }}
-              className="text-xl sm:text-2xl md:text-3xl text-neutral-100 mb-6 max-w-2xl mx-auto leading-relaxed font-medium"
+              className="text-xl sm:text-2xl md:text-3xl text-neutral-100 mb-12 max-w-2xl mx-auto leading-relaxed font-medium"
             >
               Clases de tenis dinámicas y divertidas en Buenos Aires.
-            </motion.p>
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1.2, delay: 0.6 }}
-              className="text-base sm:text-lg md:text-xl text-neutral-200 mb-12 max-w-xl mx-auto leading-relaxed"
-            >
-              Entrena en Caballito o Núñez con profesores profesionales, en
-              grupos reducidos y con una metodología que combina técnica,
-              táctica y diversión.
             </motion.p>
           </motion.div>
 
