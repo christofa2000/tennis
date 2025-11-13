@@ -1,0 +1,133 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - navigation [ref=e2]:
+    - generic [ref=e4]:
+      - link "JuegoTenis Logo" [ref=e5] [cursor=pointer]:
+        - /url: /
+        - img "JuegoTenis Logo" [ref=e7]
+      - navigation "Navegación principal" [ref=e8]:
+        - button "Clases" [ref=e9]
+        - button "Sedes" [ref=e10]
+        - button "Quiénes somos" [ref=e11]
+        - button "Contactar por WhatsApp" [ref=e12]:
+          - link "Contactar por WhatsApp" [ref=e13] [cursor=pointer]:
+            - /url: https://wa.me/5491123110735?text=Hola!%20Quiero%20saber%20sobre%20las%20clases%20de%20tenis
+            - text: Contratá acá
+  - main [ref=e14]:
+    - generic [ref=e21]:
+      - generic [ref=e22]:
+        - heading "Somos JuegoTenis 🎾" [level=1] [ref=e23]:
+          - text: Somos JuegoTenis
+          - generic [ref=e24]: 🎾
+        - paragraph [ref=e25]: Clases de tenis dinámicas y divertidas en Buenos Aires.
+        - paragraph [ref=e26]: Entrena en Caballito o Núñez con profesores profesionales, en grupos reducidos y con una metodología que combina técnica, táctica y diversión.
+      - generic [ref=e27]:
+        - button "Anotate acá" [ref=e28]:
+          - link "Anotate acá" [ref=e29] [cursor=pointer]:
+            - /url: https://wa.me/5491123110735?text=Hola!%20Quiero%20saber%20sobre%20las%20clases%20de%20tenis
+            - text: Anotate acá
+            - img [ref=e30]
+        - button "Hablemos" [ref=e32]:
+          - link "Hablemos" [ref=e33] [cursor=pointer]:
+            - /url: "#quienes-somos"
+            - text: Hablemos
+            - img [ref=e34]
+    - generic [ref=e40]:
+      - generic [ref=e41]:
+        - heading "Nuestras Clases" [level=2] [ref=e42]
+        - paragraph [ref=e43]: Ofertas diseñadas para cada nivel y edad
+      - generic [ref=e44]:
+        - generic [ref=e46]:
+          - img "Clases de tenis para adultos en JuegoTenis" [ref=e48]
+          - generic [ref=e50]:
+            - heading "Clases de tenis para adultos" [level=3] [ref=e51]
+            - paragraph [ref=e52]: Clases diseñadas para adultos de todos los niveles. Mejorá tu técnica, desarrollá tu juego y disfrutá del tenis en un ambiente amigable y profesional.
+            - button "Reservá tu clase de prueba" [ref=e53]:
+              - link "Reservá tu clase de prueba" [ref=e54] [cursor=pointer]:
+                - /url: https://wa.me/5491123110735?text=Hola!%20Quiero%20saber%20sobre%20las%20clases%20de%20tenis
+        - generic [ref=e56]:
+          - img "Clases de tenis para niños y adolescentes en JuegoTenis" [ref=e58]
+          - generic [ref=e60]:
+            - heading "Clases de niños y adolescentes" [level=3] [ref=e61]
+            - paragraph [ref=e62]: Escuela infantil de tenis con metodología lúdica y adaptada a cada edad. Desarrollamos habilidades técnicas, coordinación y valores deportivos desde temprana edad.
+            - button "Reservá tu clase de prueba" [ref=e63]:
+              - link "Reservá tu clase de prueba" [ref=e64] [cursor=pointer]:
+                - /url: https://wa.me/5491123110735?text=Hola!%20Quiero%20saber%20sobre%20las%20clases%20de%20tenis
+    - generic [ref=e69]:
+      - img "Profesor de tenis enseñando en JuegoTenis" [ref=e71]
+      - generic [ref=e73]:
+        - heading "Quiénes Somos" [level=2] [ref=e74]
+        - generic [ref=e75]:
+          - paragraph [ref=e76]:
+            - text: En JuegoTenis te ayudamos a aprender, disfrutar y compartir el tenis desde el primer día
+            - generic [ref=e77]: 🎾
+          - paragraph [ref=e78]: Nuestro equipo diseña clases personalizadas según tu nivel y tus objetivos, combinando técnica, movimiento y diversión.
+          - paragraph [ref=e79]: 👉 Sumate a JuegoTenis y descubrí una forma diferente de aprender y disfrutar el tenis.
+    - generic [ref=e81]:
+      - generic [ref=e82]:
+        - heading "NUESTRAS SEDES" [level=2] [ref=e83]
+        - paragraph [ref=e84]: Dos sedes especialmente diseñadas para mejorar tu rendimiento en cada ejercicio, actividad u objetivo que te propongas.
+      - generic [ref=e85]:
+        - link "Sede Núñez - Santiago Calzadilla 1350, CABA JuegoTenis Logo SEDE NÚÑEZ Santiago Calzadilla 1350, CABA" [ref=e87] [cursor=pointer]:
+          - /url: https://maps.google.com/?q=Santiago+Calzadilla+1350,+CABA
+          - generic [ref=e88]:
+            - img "Sede Núñez - Santiago Calzadilla 1350, CABA" [ref=e89]
+            - generic [ref=e92]:
+              - img "JuegoTenis Logo" [ref=e94]
+              - heading "SEDE NÚÑEZ" [level=3] [ref=e95]
+            - generic [ref=e97]:
+              - img [ref=e98]
+              - paragraph [ref=e101]: Santiago Calzadilla 1350, CABA
+        - link "Sede Caballito - Doblas 1043, CABA JuegoTenis Logo SEDE CABALLITO Doblas 1043, CABA" [ref=e103] [cursor=pointer]:
+          - /url: https://maps.google.com/?q=Doblas+1043,+CABA
+          - generic [ref=e104]:
+            - img "Sede Caballito - Doblas 1043, CABA" [ref=e105]
+            - generic [ref=e108]:
+              - img "JuegoTenis Logo" [ref=e110]
+              - heading "SEDE CABALLITO" [level=3] [ref=e111]
+            - generic [ref=e113]:
+              - img [ref=e114]
+              - paragraph [ref=e117]: Doblas 1043, CABA
+    - generic [ref=e123]:
+      - heading "Sumate a JuegoTenis y empezá a disfrutar del tenis hoy mismo 🎾" [level=2] [ref=e124]:
+        - text: Sumate a JuegoTenis y empezá a disfrutar del tenis hoy mismo
+        - generic [ref=e125]: 🎾
+      - paragraph [ref=e126]: Contactanos y reservá tu clase de prueba.
+      - button "Contactar por WhatsApp" [ref=e128]:
+        - link "Contactar por WhatsApp" [ref=e129] [cursor=pointer]:
+          - /url: https://wa.me/5491123110735?text=Hola!%20Quiero%20saber%20sobre%20las%20clases%20de%20tenis
+          - img [ref=e130]
+          - text: Contactar por WhatsApp
+  - contentinfo [ref=e132]:
+    - generic [ref=e134]:
+      - generic [ref=e135]:
+        - generic [ref=e136]:
+          - link "JuegoTenis Logo" [ref=e137] [cursor=pointer]:
+            - /url: /
+            - img "JuegoTenis Logo" [ref=e139]
+          - paragraph [ref=e140]: Clases de tenis dinámicas y divertidas en Buenos Aires.
+        - navigation "Enlaces del sitio" [ref=e141]:
+          - heading "Enlaces" [level=2] [ref=e142]
+          - list [ref=e143]:
+            - listitem [ref=e144]:
+              - link "Clases" [ref=e145] [cursor=pointer]:
+                - /url: "#clases"
+            - listitem [ref=e146]:
+              - link "Sedes" [ref=e147] [cursor=pointer]:
+                - /url: "#sedes"
+            - listitem [ref=e148]:
+              - link "Quiénes somos" [ref=e149] [cursor=pointer]:
+                - /url: "#quienes-somos"
+        - generic [ref=e150]:
+          - heading "Seguinos" [level=2] [ref=e151]
+          - link "Seguinos en Instagram" [ref=e153] [cursor=pointer]:
+            - /url: https://instagram.com/juegotenis
+            - img [ref=e154]
+            - text: Instagram
+      - paragraph [ref=e158]: © 2025 JuegoTenis. Todos los derechos reservados.
+  - button "Open Next.js Dev Tools" [ref=e164] [cursor=pointer]:
+    - img [ref=e165]
+  - alert [ref=e168]
+```
