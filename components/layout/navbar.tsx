@@ -51,17 +51,18 @@ export function Navbar() {
 					{/* Logo */}
 					<Link
 						href="/"
-						className="flex items-center h-12 md:h-14 hover:opacity-80 transition-opacity"
+						className="flex items-center hover:opacity-80 transition-opacity"
 						onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
 					>
+					<div className="relative w-14 h-14 md:w-16 md:h-16 rounded-full overflow-hidden">
 						<Image
-							src="/logo/fondo-blanco.jpg"
+							src="/logo/logo-blanco.png"
 							alt="JuegoTenis Logo"
-							width={140}
-							height={56}
-							className="h-full w-auto object-contain"
+							fill
+							className="object-cover"
 							priority
 						/>
+					</div>
 					</Link>
 
 					{/* Desktop Navigation */}

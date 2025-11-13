@@ -3,19 +3,14 @@
 import { Footer } from "@/components/layout/footer";
 import { Navbar } from "@/components/layout/navbar";
 import { FloatingWhatsApp } from "@/components/ui/floating-whatsapp";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Poppins } from "next/font/google";
 import "./globals.css";
 import { metadata as siteMetadata } from "./metadata";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const poppins = Poppins({
+  variable: "--font-poppins",
   subsets: ["latin"],
-  display: "swap",
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700", "800"],
   display: "swap",
 });
 
@@ -29,7 +24,7 @@ export default function RootLayout({
   return (
     <html lang="es">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${poppins.variable} antialiased`}
       >
         <Navbar />
         <main>{children}</main>
