@@ -5,12 +5,14 @@ import { CTA } from "@/components/sections/cta";
 import { Hero } from "@/components/sections/hero";
 import { Locations } from "@/components/sections/locations";
 import { Services } from "@/components/sections/services";
+import { Tournaments } from "@/components/sections/tournaments";
 
 export default function Home() {
   return (
     <>
       <Hero />
       <Services />
+      <Tournaments />
       <About />
       <Locations />
       <CTA />

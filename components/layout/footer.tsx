@@ -7,6 +7,7 @@ import Image from 'next/image'
 
 const footerLinks = [
 	{ label: 'Clases', href: '#clases' },
+	{ label: 'Torneos', href: '#torneos' },
 	{ label: 'Sedes', href: '#sedes' },
 	{ label: 'Quiénes somos', href: '#quienes-somos' },
 ]
