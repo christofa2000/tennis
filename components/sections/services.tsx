@@ -120,13 +120,13 @@ export function Services() {
 													>
 														<div className="space-y-4 pt-2 pb-4">
 															<div className="p-4 bg-neutral-50 rounded-lg">
-																<h4 className="font-semibold text-neutral-950 mb-2">🎾 Clases individuales</h4>
+																<h4 className="font-semibold text-neutral-950 mb-2">Clases individuales</h4>
 																<p className="text-neutral-700 text-sm leading-relaxed">
 																	Entrenamientos personalizados, orientados a tu nivel y tus objetivos. Perfectas para quienes buscan avanzar rápido, perfeccionar técnica específica o retomar el deporte después de un tiempo.
 																</p>
 															</div>
 															<div className="p-4 bg-neutral-50 rounded-lg">
-																<h4 className="font-semibold text-neutral-950 mb-2">🎾 Grupos reducidos de 4 personas</h4>
+																<h4 className="font-semibold text-neutral-950 mb-2">Grupos reducidos de 4 personas</h4>
 																<p className="text-neutral-700 text-sm leading-relaxed">
 																	Ideales tanto para quienes quieren iniciarse en el deporte como para quienes buscan mejorar su juego.
 																</p>
@@ -202,7 +202,7 @@ export function Services() {
 														className="overflow-hidden"
 													>
 														<div className="pt-4 pb-4">
-															<h4 className="font-semibold text-neutral-950 mb-4">🎾 Canchas que utilizamos</h4>
+															<h4 className="font-semibold text-neutral-950 mb-4">Canchas que utilizamos</h4>
 															<div className="space-y-4">
 																<div className="p-4 bg-neutral-50 rounded-lg">
 																	<h5 className="font-semibold text-neutral-950 mb-2">• Cancha Roja</h5>

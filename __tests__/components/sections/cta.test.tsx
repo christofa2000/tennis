@@ -24,12 +24,6 @@ describe('CTA Section', () => {
 	})
 
 
-	it('should render emoji in heading', () => {
-		render(<CTA />)
-		
-		const heading = screen.getByRole('heading', { level: 2 })
-		expect(heading).toHaveTextContent('🎾')
-	})
 
 
 	it('should have no accessibility violations', async () => {

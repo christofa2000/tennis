@@ -39,12 +39,6 @@ describe('About Section', () => {
 		expect(cta).toBeInTheDocument()
 	})
 
-	it('should render emoji in content', () => {
-		render(<About />)
-		
-		const content = screen.getByText(/🎾/)
-		expect(content).toBeInTheDocument()
-	})
 
 	it('should have proper section id for navigation', () => {
 		render(<About />)

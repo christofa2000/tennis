@@ -1,4 +1,4 @@
-# 🎾 JuegoTenis - Landing Page
+# JuegoTenis - Landing Page
 
 Landing page moderna y responsive para **JuegoTenis**, una escuela de tenis en Buenos Aires. Diseñada con inspiración en OpenPark, adaptada a la temática de clases de tenis.
 

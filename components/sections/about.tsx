@@ -51,14 +51,13 @@ export function About() {
 						</SectionTitle>
 						<div className="space-y-6 text-neutral-200 text-lg sm:text-xl leading-relaxed">
 							<p className="text-neutral-100">
-								En <span className="text-brand-500 font-bold">JuegoTenis</span> te ayudamos a aprender, disfrutar y compartir el tenis desde el primer día{' '}
-								<span className="inline-block">🎾</span>
+								En <span className="text-brand-500 font-bold">JuegoTenis</span> te ayudamos a aprender, disfrutar y compartir el tenis desde el primer día.
 							</p>
 							<p>
 								Nuestro equipo diseña clases personalizadas según tu nivel y tus objetivos, combinando técnica, movimiento y diversión.
 							</p>
 							<p className="text-white font-semibold text-lg sm:text-xl">
-								👉 Sumate a JuegoTenis y descubrí una forma diferente de aprender y disfrutar el tenis.
+								Sumate a JuegoTenis y descubrí una forma diferente de aprender y disfrutar el tenis.
 							</p>
 						</div>
 					</motion.div>
