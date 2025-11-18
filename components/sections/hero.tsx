@@ -64,7 +64,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.2, delay: 0.8, ease: [0.16, 1, 0.3, 1] }}
-            className="flex flex-col sm:flex-row gap-4 justify-center items-center"
+            className="flex justify-center items-center"
           >
             <Button
               size="lg"
@@ -78,17 +78,6 @@ export function Hero() {
               >
                 Anotate acá
                 <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
-              </a>
-            </Button>
-            <Button
-              variant="outline"
-              size="lg"
-              className="w-full sm:w-auto min-w-[220px] border-2 border-white/30 text-white backdrop-blur-sm bg-white/5 hover:bg-white/10 hover:border-white/50 transition-all"
-              asChild
-            >
-              <a href="#quienes-somos">
-                Hablemos
-                <ArrowRight className="ml-2 h-5 w-5" />
               </a>
             </Button>
           </motion.div>

@@ -37,7 +37,7 @@ describe('Services Section', () => {
 		render(<Services />)
 		
 		const adultosDesc = screen.getByText(/Clases diseñadas para adultos de todos los niveles/i)
-		const ninosDesc = screen.getByText(/Escuela infantil de tenis con metodología lúdica/i)
+		const ninosDesc = screen.getByText(/Escuela infantil de tenis con una metodología lúdica y adaptada a cada edad/i)
 		
 		expect(adultosDesc).toBeInTheDocument()
 		expect(ninosDesc).toBeInTheDocument()

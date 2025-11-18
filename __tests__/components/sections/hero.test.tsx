@@ -32,13 +32,6 @@ describe("Hero Section", () => {
     expect(button).toHaveAttribute("rel", "noopener noreferrer");
   });
 
-  it('should render "Hablemos" button with correct anchor link', () => {
-    render(<Hero />);
-
-    const button = screen.getByRole("link", { name: /Hablemos/i });
-    expect(button).toBeInTheDocument();
-    expect(button).toHaveAttribute("href", "#quienes-somos");
-  });
 
   it("should have proper accessibility attributes", () => {
     render(<Hero />);

@@ -13,8 +13,8 @@ import Image from 'next/image'
 const navItems = [
 	{ label: 'Clases', href: '#clases' },
 	{ label: 'Torneos', href: '#torneos' },
-	{ label: 'Sedes', href: '#sedes' },
 	{ label: 'Quiénes somos', href: '#quienes-somos' },
+	{ label: 'Sedes', href: '#sedes' },
 ]
 
 export function Navbar() {

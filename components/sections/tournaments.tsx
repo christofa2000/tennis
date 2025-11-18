@@ -74,24 +74,19 @@ export function Tournaments() {
                   competir
                 </h3>
                 <p className="text-lg sm:text-xl text-neutral-600 leading-relaxed font-medium">
-                  En JuegoTenis organizamos torneos amateurs donde cada pelota
-                  cuenta, cada punto suma y cada partido es una oportunidad para
-                  superarte.
+                  En JuegoTenis organizamos encuentros y torneos amateurs donde cada partido es una oportunidad para superarte.
                 </p>
               </div>
 
               <div className="space-y-4 pt-4">
                 <p className="text-base sm:text-lg text-neutral-700 leading-relaxed">
-                  Ya sea que busques medirte con otros jugadores, mejorar tu
-                  nivel competitivo o simplemente disfrutar del espíritu
-                  deportivo, nuestros torneos están diseñados para todos.
-                  Categorías por nivel, partidos emocionantes y una comunidad
-                  que celebra cada saque, cada volea y cada victoria.
+                  Tanto si querés dar tus primeros pasos en la competencia como si buscás medirte con otros jugadores y seguir creciendo, tenemos propuestas para todos los niveles.
                 </p>
                 <p className="text-base sm:text-lg text-neutral-700 leading-relaxed">
-                  Formá parte de una experiencia única donde el tenis se
-                  convierte en pasión, los rivales en compañeros y cada torneo
-                  en un recuerdo inolvidable. 🏆
+                  Ofrecemos categorías por nivel, partidos dinámicos y un ambiente donde prima el disfrute, el aprendizaje y el espíritu deportivo.
+                </p>
+                <p className="text-base sm:text-lg text-neutral-700 leading-relaxed">
+                  Sumate a una experiencia donde el tenis se convierte en pasión, los rivales en compañeros y cada encuentro deja un recuerdo inolvidable. 🏆
                 </p>
               </div>
             </motion.div>
