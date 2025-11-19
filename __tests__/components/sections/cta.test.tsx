@@ -13,7 +13,8 @@ describe('CTA Section', () => {
 		
 		const heading = screen.getByRole('heading', { level: 2 })
 		expect(heading).toBeInTheDocument()
-		expect(heading).toHaveTextContent(/Sumate a JuegoTenis/i)
+		expect(heading).toHaveTextContent(/Sumate a/i)
+		expect(heading).toHaveTextContent(/y empezá a disfrutar del tenis hoy mismo/i)
 	})
 
 	it('should render the description text', () => {

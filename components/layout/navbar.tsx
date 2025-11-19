@@ -80,16 +80,10 @@ export function Navbar() {
 						<Button
 							variant="primary"
 							size="md"
-							asChild
+							onClick={() => handleNavClick('#contacto')}
+							aria-label="Ir a contacto"
 						>
-							<a
-								href={siteConfig.links.whatsapp}
-								target="_blank"
-								rel="noopener noreferrer"
-								aria-label="Contactar por WhatsApp"
-							>
-								Contratá acá
-							</a>
+							Contacto
 						</Button>
 					</nav>
 
@@ -128,21 +122,13 @@ export function Navbar() {
 									{item.label}
 								</button>
 							))}
-							<Button
-								variant="primary"
-								size="md"
-								className="w-full"
-								asChild
+							<button
+								onClick={() => handleNavClick('#contacto')}
+								className="w-full min-h-[44px] bg-brand-500 text-white hover:bg-brand-600 active:bg-brand-700 rounded-lg font-medium transition-colors text-base px-6 flex items-center justify-center focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 focus-visible:ring-offset-2 focus-visible:ring-offset-neutral-950"
+								aria-label="Ir a contacto"
 							>
-								<a
-									href={siteConfig.links.whatsapp}
-									target="_blank"
-									rel="noopener noreferrer"
-									aria-label="Contactar por WhatsApp"
-								>
-									Contratá acá
-								</a>
-							</Button>
+								Contacto
+							</button>
 						</nav>
 					</motion.div>
 				)}
