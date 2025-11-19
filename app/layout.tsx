@@ -3,12 +3,12 @@
 import { Footer } from "@/components/layout/footer";
 import { Navbar } from "@/components/layout/navbar";
 import { FloatingWhatsApp } from "@/components/ui/floating-whatsapp";
-import { Poppins } from "next/font/google";
+import { Montserrat } from "next/font/google";
 import "./globals.css";
 import { metadata as siteMetadata } from "./metadata";
 
-const poppins = Poppins({
-  variable: "--font-poppins",
+const montserrat = Montserrat({
+  variable: "--font-montserrat",
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700", "800"],
   display: "swap",
@@ -22,9 +22,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="es">
+    <html lang="es" className={montserrat.variable}>
       <body
-        className={`${poppins.variable} antialiased`}
+        className={`${montserrat.variable} font-sans antialiased`}
+        style={{ fontFamily: 'var(--font-montserrat), system-ui, sans-serif' }}
       >
         <Navbar />
         <main>{children}</main>

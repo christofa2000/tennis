@@ -63,13 +63,13 @@
 	--color-surface: var(--surface);
 	--color-surface-dark: var(--surface-dark);
 	
-	--font-sans: var(--font-poppins);
+	--font-sans: var(--font-montserrat);
 }
 
 body {
 	background: var(--background);
 	color: var(--foreground);
-	font-family: var(--font-sans), system-ui, -apple-system, sans-serif;
+	font-family: var(--font-montserrat), var(--font-sans), system-ui, -apple-system, sans-serif;
 	font-feature-settings: 'kern' 1;
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
